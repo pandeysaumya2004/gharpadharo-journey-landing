@@ -32,9 +32,9 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
-				'purple-primary': 'hsl(var(--purple-primary))',
-				'purple-light': 'hsl(var(--purple-light))',
-				'purple-dark': 'hsl(var(--purple-dark))',
+				'blue-grey-primary': 'hsl(var(--blue-grey-primary))',
+				'blue-grey-light': 'hsl(var(--blue-grey-light))',
+				'blue-grey-dark': 'hsl(var(--blue-grey-dark))',
 				'text-light': 'hsl(var(--text-light))',
 				'text-muted': 'hsl(var(--text-muted))',
 				destructive: {

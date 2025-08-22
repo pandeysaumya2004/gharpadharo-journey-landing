@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Home, MapPin, Mail, Phone, Calendar, CheckCircle, Target, Zap } from "lucide-react";
-import gharpadharoLogo from "@/assets/gharpadharo-logo.png";
+import gharpadharoLogo from "/lovable-uploads/c40ced00-1521-4653-821d-d2becbbec957.png";
 
 const Index = () => {
   const scrollToSection = (sectionId: string) => {
@@ -40,7 +40,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Fixed Header */}
-      <header className="fixed top-0 w-full z-50 bg-purple-primary backdrop-blur-sm border-b border-purple-light/20">
+      <header className="fixed top-0 w-full z-50 bg-blue-grey-primary backdrop-blur-sm border-b border-blue-grey-light/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={gharpadharoLogo} alt="Gharpadharo Logo" className="w-10 h-10" />
@@ -73,7 +73,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-purple-primary to-purple-dark">
+      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-blue-grey-primary to-blue-grey-dark">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold text-text-light mb-6 leading-tight">
             Find Your Perfect Room
@@ -93,7 +93,7 @@ const Index = () => {
       </section>
 
       {/* Journey Section */}
-      <section id="journey" className="py-20 px-4 bg-purple-dark">
+      <section id="journey" className="py-20 px-4 bg-blue-grey-dark">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-text-light mb-4">Our Journey</h2>
@@ -102,19 +102,19 @@ const Index = () => {
           
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-purple-light transform md:-translate-x-1/2"></div>
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-blue-grey-light transform md:-translate-x-1/2"></div>
             
             {journeyEvents.map((event, index) => (
               <div key={index} className={`relative flex items-center mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex-col md:flex-row`}>
                 {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-purple-light rounded-full transform md:-translate-x-1/2 -translate-y-1/2 top-1/2"></div>
+                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-blue-grey-light rounded-full transform md:-translate-x-1/2 -translate-y-1/2 top-1/2"></div>
                 
                 {/* Content Card */}
                 <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}`}>
-                  <Card className="bg-purple-light/20 border-purple-light/30 backdrop-blur-sm">
+                  <Card className="bg-blue-grey-light/20 border-blue-grey-light/30 backdrop-blur-sm">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="p-2 bg-purple-light/30 rounded-lg text-text-light">
+                        <div className="p-2 bg-blue-grey-light/30 rounded-lg text-text-light">
                           {event.icon}
                         </div>
                         <CardTitle className="text-2xl font-bold text-text-light">{event.year}</CardTitle>
@@ -133,7 +133,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-purple-primary">
+      <section id="contact" className="py-20 px-4 bg-blue-grey-primary">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-text-light mb-4">Get In Touch</h2>
@@ -142,24 +142,24 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <Card className="bg-purple-light/20 border-purple-light/30 backdrop-blur-sm">
+            <Card className="bg-blue-grey-light/20 border-blue-grey-light/30 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl text-text-light">Send us a message</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <Input 
                   placeholder="Your Name" 
-                  className="bg-purple-dark/50 border-purple-light/30 text-text-light placeholder:text-text-muted"
+                  className="bg-blue-grey-dark/50 border-blue-grey-light/30 text-text-light placeholder:text-text-muted"
                 />
                 <Input 
                   type="email" 
                   placeholder="Your Email" 
-                  className="bg-purple-dark/50 border-purple-light/30 text-text-light placeholder:text-text-muted"
+                  className="bg-blue-grey-dark/50 border-blue-grey-light/30 text-text-light placeholder:text-text-muted"
                 />
                 <Textarea 
                   placeholder="Your Message" 
                   rows={4}
-                  className="bg-purple-dark/50 border-purple-light/30 text-text-light placeholder:text-text-muted"
+                  className="bg-blue-grey-dark/50 border-blue-grey-light/30 text-text-light placeholder:text-text-muted"
                 />
                 <Button variant="hero" className="w-full">Send Message</Button>
               </CardContent>
@@ -168,7 +168,7 @@ const Index = () => {
             {/* Contact Info */}
             <div className="space-y-8">
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-purple-light/30 rounded-lg">
+                <div className="p-3 bg-blue-grey-light/30 rounded-lg">
                   <Mail className="w-6 h-6 text-text-light" />
                 </div>
                 <div>
@@ -178,7 +178,7 @@ const Index = () => {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-purple-light/30 rounded-lg">
+                <div className="p-3 bg-blue-grey-light/30 rounded-lg">
                   <Phone className="w-6 h-6 text-text-light" />
                 </div>
                 <div>
@@ -188,7 +188,7 @@ const Index = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-purple-light/30 rounded-lg">
+                <div className="p-3 bg-blue-grey-light/30 rounded-lg">
                   <Home className="w-6 h-6 text-text-light" />
                 </div>
                 <div>
@@ -202,7 +202,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-purple-dark border-t border-purple-light/20">
+      <footer className="py-12 px-4 bg-blue-grey-dark border-t border-blue-grey-light/20">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
